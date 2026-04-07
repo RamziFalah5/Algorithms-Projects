@@ -192,19 +192,32 @@
 
 .dp-header {
     -fx-font-weight: bold;
+    -fx-font-size: 14px;
     -fx-text-fill: #0D47A1;
     -fx-padding: 4 8 4 8;
     -fx-background-color: #e3ecfb;
     -fx-background-radius: 6;
     -fx-alignment: center;
+
+    -fx-min-width: 70px;
+    -fx-pref-width: 70px;
+    -fx-min-height: 35px;
+    -fx-pref-height: 35px;
 }
 
 .dp-row-header {
     -fx-font-weight: bold;
+    -fx-font-size: 14px;
     -fx-text-fill: #0D47A1;
     -fx-padding: 4 8 4 8;
     -fx-background-color: #eef3fb;
     -fx-background-radius: 6;
+    -fx-alignment: center;
+
+    -fx-min-width: 50px;
+    -fx-pref-width: 50px;
+    -fx-min-height: 35px;
+    -fx-pref-height: 35px;
 }
 
 .dp-cell {
