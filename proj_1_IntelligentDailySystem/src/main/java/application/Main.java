@@ -9,7 +9,6 @@ import javafx.scene.control.TabPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 
-
 public class Main extends Application {
 	public Stage getStage() {
 		return stage;
@@ -32,7 +31,7 @@ public class Main extends Application {
 		border.setTop(menu);
 		border.setCenter(p.mainInterFace());
         Scene scene = new Scene(border , 1200 ,730);
-		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		scene.getStylesheets().add(getClass().getResource("/application/application.css").toExternalForm());
 		stage.setScene(scene);
 		stage.setFullScreen(true);
 		stage.show();
