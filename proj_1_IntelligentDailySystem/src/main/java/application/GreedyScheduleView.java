@@ -6,6 +6,7 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -49,7 +50,8 @@ public class GreedyScheduleView {
 
 		Button searchButton = new Button();
 		searchButton.getStyleClass().add("my-epic-button");
-		ImageView searchImage = new ImageView("Search.png");
+		ImageView searchImage = new ImageView(
+				new Image(getClass().getResource("/application/Search.png").toExternalForm()));
 		searchImage.setFitHeight(22);
 		searchImage.setFitWidth(22);
 		searchButton.setGraphic(searchImage);
@@ -60,7 +62,7 @@ public class GreedyScheduleView {
 		table.setPrefWidth(760);
 		table.setPrefHeight(450);
 		table.setMaxSize(Region.USE_PREF_SIZE, Region.USE_PREF_SIZE);
-		table.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		table.getStylesheets().add(getClass().getResource("/application/application.css").toExternalForm());
 
 		HBox h1 = new HBox(20);
 		h1.setAlignment(Pos.CENTER);
@@ -86,7 +88,6 @@ public class GreedyScheduleView {
 		RatioCircle ratioCircle = new RatioCircle(solver.parseTimeToHours(), solver.getTotalTimeHours(), 180);
 
 		vR.getChildren().addAll(ratioCircle, b2);
-
 
 		HBox hAll = new HBox(160);
 		hAll.setAlignment(Pos.CENTER);
