@@ -1,0 +1,256 @@
+.my-epic-button {                      /* كلاس الزر الأساسي */
+    -fx-background-color: #0D47A1;     /* لون خلفية الزر (أزرق غامق) */
+    -fx-background-radius: 12;         /* تدوير زوايا الخلفية */
+    -fx-border-radius: 12;             /* تدوير زوايا الحدود */
+    -fx-border-color: #0B3C8A;         /* لون حدود الزر */
+    -fx-border-width: 2;               /* سماكة الحدود */
+    -fx-text-fill: #FFFFFF;            /* لون نص الزر */
+    -fx-font-size: 15px;               /* حجم الخط */
+    -fx-font-weight: bold;             /* الخط عريض */
+    -fx-padding: 8 18 8 18;            /* مسافات داخلية */
+    -fx-cursor: hand;                  /* شكل الماوس */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.3, 0, 2); 
+                                       /* ظل */
+    -fx-background-insets: 0;          /* إزالة الفراغ */
+}
+
+.my-epic-button:hover {                /* عند تمرير الماوس فوق الزر */
+    -fx-background-color: #1565C0;     /* أغمق قليلاً */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 12, 0.35, 0, 3);
+                                       /* ظل أقوى */
+}
+
+.my-epic-button:pressed {              /* عند الضغط */
+    -fx-background-color: #0B3C8A;     /* أغمق عند الضغط */
+    -fx-translate-y: 1;                /* ينزل للأسفل قليلاً */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.20), 6, 0.2, 0, 1);
+                                       /* ظل خفيف */
+}
+
+.my-epic-button:focused {              /* فوكس */
+    -fx-border-color: #0D47A1;         /* لون حدود الفوكس */
+    -fx-border-width: 2;
+}
+
+
+
+/* ================= TableView ================= */
+
+.table-view {                          
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: 0;
+    -fx-padding: 6;
+    -fx-border-color: #0D47A1;         /* لون حدود الجدول */
+    -fx-border-width: 1.5;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 10, 0.25, 0, 2);
+}
+
+/* ============ Header (Updated) ============ */
+.table-view .column-header-background {
+    -fx-background-color: #0D47A1;     /* خلفية الهيدر */
+    -fx-background-radius: 10 10 0 0;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;            
+}
+
+/* صفوف الجدول */
+.table-row-cell {                       
+    -fx-background-color: transparent;
+    -fx-border-color: #B0C4DE;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 4;
+    -fx-cell-size: 34px;
+}
+
+/* إلغاء hover */
+.table-row-cell:hover {
+    -fx-background-color: transparent;
+}
+
+/* صفوف فاضية */
+.table-row-cell:empty {
+    -fx-background-color: transparent;
+}
+.table-row-cell:empty:hover {
+    -fx-background-color: transparent;
+}
+.table-row-cell:empty:selected {
+    -fx-background-color: transparent;
+}
+
+/* الصف المحدد */
+.table-row-cell:selected {
+    -fx-background-color: #0D47A1;     /* أزرق غامق */
+    -fx-text-fill: white;
+}
+
+.table-view:focused {
+    -fx-border-color: #0D47A1;         /* حدود فوكس */
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 12, 0.3, 0, 3);
+}
+
+
+
+/* ================= TextField ================= */
+
+.my-epic-textfield {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #0D47A1;         /* لون حدود التكست فيلد */
+    -fx-border-width: 1.5;
+    -fx-text-fill: #333333;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 18 8 18;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 10, 0.3, 0, 2);
+    -fx-background-insets: 0;
+}
+
+.my-epic-textfield:hover {
+    -fx-background-color: #EEF3FB;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 12, 0.35, 0, 3);
+}
+
+.my-epic-textfield:focused {
+    -fx-border-color: #0D47A1;
+    -fx-border-width: 2;
+    -fx-background-color: #FFFFFF;
+}
+
+
+
+/* ================= Label ================= */
+
+.my-epic-label {
+    -fx-text-fill: #0D47A1;            /* لون النص */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 12 6 12;
+
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+
+    -fx-border-width: 1.5;
+}
+
+.my-epic-label:focused {
+    -fx-border-color: #0D47A1;
+    -fx-border-width: 2;
+}
+
+/* ===== Circle Background ===== */
+.ratio-circle-bg {
+    -fx-stroke: #D0D6E1;          /* رمادي ناعم */
+    -fx-stroke-width: 10px;
+    -fx-fill: transparent;
+}
+
+/* ===== Arc Filled (Blue Progress) ===== */
+.ratio-circle-arc {
+    -fx-fill: #0D47A1;            /* أزرق غامق */
+    -fx-stroke: transparent;
+}
+
+/* ===== Text Inside Circle ===== */
+.ratio-circle-text {
+    -fx-fill: #2A2A2A;            /* أسود ناعم */
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 5, 0.3, 0, 1);
+}
+
+/* ===== Container Shadow (StackPane) ===== */
+.ratio-circle-container {
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 20, 0.4, 0, 3);
+}
+
+/* ===== Dynamic Programming Grid ===== */
+
+.dp-grid {
+    -fx-background-color: #f5f7fb;
+    -fx-padding: 15;
+    -fx-hgap: 6;
+    -fx-vgap: 6;
+    -fx-border-color: #d0d7e2;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.dp-header {
+    -fx-font-weight: bold;
+    -fx-text-fill: #0D47A1;
+    -fx-padding: 4 8 4 8;
+    -fx-background-color: #e3ecfb;
+    -fx-background-radius: 6;
+    -fx-alignment: center;
+}
+
+.dp-row-header {
+    -fx-font-weight: bold;
+    -fx-text-fill: #0D47A1;
+    -fx-padding: 4 8 4 8;
+    -fx-background-color: #eef3fb;
+    -fx-background-radius: 6;
+}
+
+.dp-cell {
+    -fx-padding: 3 8 3 8;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e4ee;
+    -fx-border-width: 0.5;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-alignment: center;
+    -fx-text-fill: #333333;
+    -fx-font-size: 12px;
+    -fx-min-width: 250px;
+    
+}
+
+.dp-cell:hover {
+    -fx-background-color: #edf2fa;
+}
+
+.dp-grid-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0D47A1;
+    -fx-padding: 0 0 10 0;
+}
+
+/* ===== Report Title ===== */
+.report-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+/* ===== Report TextArea ===== */
+.report-textarea {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 14px;
+
+    -fx-control-inner-background: #f8f9fa;
+    -fx-text-fill: #000000;
+
+    -fx-border-color: #0D47A1;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+
+    -fx-padding: 12;
+}
